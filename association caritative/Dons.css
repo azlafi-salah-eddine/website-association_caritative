@@ -1,0 +1,267 @@
+/*--------------------------navbar------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Bebas+Neue&family=Josefin+Sans&family=Kanit:wght@300;400&family=Lobster&family=Roboto&family=Ysabeau+SC:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 110px;
+    position: fixed !important;
+    display: flex;
+    padding: 7px 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #008ec6;
+    
+}
+.navbar input#menu-toggler {
+    display: none;
+    
+}
+.navbar #hamburger-btn {
+    cursor: pointer;
+    display: none;
+    margin-right: 100px;
+}
+.navbar .all-links {
+    font-family: 'Ysabeau SC', sans-serif;
+    display: flex;
+    margin-right: 30px;
+}
+.navbar .all-links li .active {
+    color: rgb(255, 224, 50);
+}
+.navbar .all-links li {
+    position: relative;
+    list-style: none;
+    padding: 1px;
+}
+.navbar .all-links li:hover {
+    position: relative;
+    list-style: none;
+}
+.logo  {
+    display: flex;
+    width: 120px;
+    height: 115px;
+    flex-shrink: 0;
+    margin-left: 100px;
+}
+
+header a, footer a {
+    margin: 5px 25px;
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    padding: 20px 0;
+    display: inline-block;
+    
+}
+
+
+@media screen and (max-width: 860px) {
+    .navbar .all-links {
+    position: fixed;
+    left: -150%;
+    width: 300px;
+    display: block;
+    height: 100vh;
+    top: 110px;
+    width: 100%;
+    text-align: center;
+    transition: left 0.5s ease;
+    
+}
+.navbar #menu-toggler:checked~.all-links {
+    left: 0;
+}
+.navbar{
+    
+}
+.navbar .all-links li {
+    font-size: 18px;
+    background-color: fill: #0AA1DD;;
+    width: 90%;
+    background-color: #008ec6;
+}
+.navbar #hamburger-btn {
+    display: block;
+}
+.pr1{
+    width: 100%;
+    height: 630px !important;
+    flex-shrink: 0;
+    background: #42C2FF;
+}
+.pr1_title{
+    font-family: 'Aref Ruqaa', serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 100px;
+    padding-left: 100px;
+    width: 200px !important;
+    height: 271px !;
+    flex-shrink: 0;
+    font-size: 45px !important;
+    color: #42C2FF;
+    -webkit-text-stroke: 0.2vw #ffffff;
+}
+}
+/*--------------------------donate------------------------------*/
+body{
+    background-color: #42C2FF !important;
+}
+.coo{
+    display: inline!important ;
+
+}
+.donate {
+    position: relative;
+    width: 100%;
+    margin: 45px 0;
+    background: rgba(136, 136, 136, 0.5);
+}
+
+.donate .donate-content {
+    padding: 45px 0 15px 0;
+}
+
+.container .donate {
+    margin: 90px 0;
+}
+
+.container .donate .donate-content {
+    padding: 45px 30px 15px 30px;
+}
+
+.donate .donate-content .section-header {
+    margin-bottom: 30px;
+}
+
+.donate .donate-content .section-header h2 {
+    color: #ffffff;
+}
+.section-header p{
+    color:#ffffff!important;
+    font-size: 30px;
+}
+}
+.donate .donate-text p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.donate .donate-form {
+    padding: 90px 30px;
+    background: #008ec6;
+}
+
+.donate .donate-form .control-group {
+    margin-bottom: 15px;
+}
+
+.donate .donate-form .form-control {
+    height: 60px;
+    color: #ffffff;
+    padding: 0 15px;
+    border-radius: 0;
+    border: 1px solid #ffffff;
+    background: transparent;
+}
+
+.donate .donate-form .form-control::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.donate .donate-form .form-control:-ms-input-placeholder,
+.donate .donate-form .form-control::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.donate .donate-form .btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.donate .donate-form .btn.btn-custom {
+    padding: 15px 0;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0 0 0 0 #ffffff;
+}
+
+.donate .donate-form .btn.btn-custom:hover{
+    color: #000000;
+    border: 1px solid #ffffff;
+    box-shadow: inset 0 0 0 30px #ffffff;
+}
+/*--------------------------footer------------------------------*/
+footer{
+    background-color: #008ec6;
+    height: 500px;
+    border-top: #fff 5px solid;
+}
+.lo-co{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+}
+.logofooter>img{
+    height: 120px;
+    width: 130px;
+}
+.cofooter{
+    color: #fff;
+}
+
+.ictxt{
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    margin-left: 20px;
+
+}
+
+
+.iconsfooter>ul{
+    margin-top: 15px;
+    display: flex;
+}
+
+.iconsfooter>ul>li{
+    
+    list-style-type: none;
+    display: flex;
+}
+.iconsfooter>ul>li>img{
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    cursor: pointer;
+}
+
+
+
+
+.colink{
+    display: flex;
+    justify-content: space-around;
+    font-size: 21px;
+    margin-top: 20px;
+}
+.linkleft>ul>li{
+    cursor: pointer;
+}
+.linkright{
+    cursor: pointer;
+}
